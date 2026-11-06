@@ -340,7 +340,8 @@ details[open]>summary .pm::after{transform:rotate(0)}
 
 /* correspondence */
 .mail{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin:34px 0 0;padding:22px 0;border-block:2px solid var(--ink)}
-.mail-addr{font:600 clamp(20px,2.6vw,32px)/1.1 var(--f-display);font-stretch:125%;letter-spacing:-.005em;user-select:all;overflow-wrap:anywhere;min-width:0}
+.mail-addr{font:600 clamp(20px,2.6vw,32px)/1.1 var(--f-display);font-stretch:125%;letter-spacing:-.005em;overflow-wrap:anywhere;min-width:0;text-decoration:none}
+.mail-addr:hover{text-decoration:underline;text-decoration-thickness:2px;text-decoration-color:var(--signal)}
 .btn{display:inline-flex;align-items:center;gap:9px;padding:10px 14px;border:1px solid var(--ink);border-radius:2px;background:var(--ink);color:var(--paper);cursor:pointer;font:500 11px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase}
 .btn:hover{background:var(--signal);border-color:var(--signal)}
 .btn-status{color:var(--ink-3);font-size:11px;min-width:5ch}
