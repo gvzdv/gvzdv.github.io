@@ -1,4 +1,4 @@
-/* Mike Gvozdev · annual report 2026 — plates after Erik Nitsche, page turns, editions */
+/* Mike Gvozdev, annual report 2026: plates after Erik Nitsche, page turns, editions */
 (() => {
 "use strict";
 const root = document.documentElement;
@@ -24,7 +24,7 @@ function dust(c, W, H, R, n, maxY) { for (let i = 0; i < n; i++) { c.fillStyle =
 
 const KINDS = {};
 
-/* ---------- PLATE I · applied ai (after "basic forces") ---------- */
+/* ---------- PLATE I: applied ai (after "basic forces") ---------- */
 KINDS.forces = {
   focus: .45,
   bg(c, W, H, dark, R, st) {
@@ -127,7 +127,7 @@ KINDS.forces = {
   }
 };
 
-/* ---------- PLATE II · architecture (after "nuclear fusion") ---------- */
+/* ---------- PLATE II: architecture (after "nuclear fusion") ---------- */
 KINDS.fusion = {
   focus: .45,
   init(W, H) { return { cx: W * .5, by: H * .385, bw: W * .21, bh: H * .062, rw: W * .21 * .33, lean: 0, press: 0 }; },
@@ -193,7 +193,7 @@ KINDS.fusion = {
   }
 };
 
-/* ---------- PLATE III · flight operations (after "first steps into space") ---------- */
+/* ---------- PLATE III: flight operations (after "first steps into space") ---------- */
 // Three sails and a needle, traced from the poster on its 600 × 824 sheet. Every sail meets the others where the needle's
 // body hands over to its harp; the lighter panels are the overlaps. Paths are runs of cubic segments.
 const SHIP = {
@@ -358,7 +358,7 @@ KINDS.sails = {
 };
 
 
-/* ---------- PLATE IV · experiments (after "weather control") ---------- */
+/* ---------- PLATE IV: experiments (after "weather control") ---------- */
 function field(W, H, R) {
   const bumps = []; for (let i = 0; i < 11; i++) bumps.push({ x: R() * W * 1.2 - W * .1, y: R() * H, s: W * (.09 + R() * .22), a: (R() < .5 ? -1 : 1) * (.5 + R() * .9) });
   const f = (x, y) => { let v = 0; for (const b of bumps) { const dx = x - b.x, dy = y - b.y; v += b.a * Math.exp(-(dx * dx + dy * dy) / (2 * b.s * b.s)); } return v + .15 * Math.sin(x / W * 5 + y / H * 3); };
@@ -521,7 +521,7 @@ function step(st, W, H, dt, P) {
   }
 }
 
-/* ---------- PLATE V · open channels (after "worlds without end") ---------- */
+/* ---------- PLATE V: open channels (after "worlds without end") ---------- */
 function galaxy(c, x, y, s, rot, rgb, R) {
   c.save(); c.translate(x, y); c.rotate(rot);
   for (let k = 0; k < 5; k++) {
@@ -734,7 +734,7 @@ const rh = document.getElementById('rh-now');
 const secs = [...document.querySelectorAll('.sec[data-plate]')];
 function setSection(sec) {
   const k = +sec.dataset.plate;
-  rh.innerHTML = `<b>p. ${sec.dataset.folio}</b> · ${sec.dataset.name}`;
+  rh.innerHTML = `<b>p. ${sec.dataset.folio}</b>&emsp;${sec.dataset.name}`;
   setCaption(k, sec.dataset.cap);
   showPlate(k);
   syncTurner();
@@ -758,7 +758,7 @@ const corner = document.getElementById('corner'), cLab = corner.querySelector('.
 const pgPrev = document.getElementById('pg-prev'), pgNext = document.getElementById('pg-next');
 function syncTurner() {
   const i = secs.indexOf(curSec), nx = secs[i + 1];
-  if (nx) { cLab.textContent = `p. ${nx.dataset.folio} · ${nx.dataset.name}`; cFol.textContent = nx.dataset.folio; corner.setAttribute('aria-label', `Turn to page ${+nx.dataset.folio}: ${nx.dataset.name}`); }
+  if (nx) { cLab.textContent = `p. ${nx.dataset.folio}\u2003${nx.dataset.name}`; cFol.textContent = nx.dataset.folio; corner.setAttribute('aria-label', `Turn to page ${+nx.dataset.folio}: ${nx.dataset.name}`); }
   else { cLab.textContent = 'back to the cover'; cFol.textContent = '01'; corner.setAttribute('aria-label', 'Back to the cover'); }
   pgNext.disabled = !nx;
 }
