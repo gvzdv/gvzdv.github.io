@@ -1,373 +1,627 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mike Gvozdev, applied AI engineer</title>
-<meta name="description" content="Mike Gvozdev, applied AI engineer in Montréal. LLM systems from proof of concept to production.">
-<link rel="canonical" href="https://gvzdv.github.io/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://gvzdv.github.io/">
-<meta property="og:title" content="Mike Gvozdev, applied AI engineer">
-<meta property="og:description" content="Mike Gvozdev, applied AI engineer in Montréal. LLM systems from proof of concept to production.">
-<meta property="og:image" content="https://gvzdv.github.io/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#e5e4da" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#09111a" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<script>try{var e=localStorage.getItem('mg-edition');if(e==='light'||e==='dark')document.documentElement.setAttribute('data-theme',e)}catch(_){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@100..125,300..800&family=Exo+2:wght@300;500;700&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/site.css">
-<script src="assets/site.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mike Gvozdev, applied AI engineer</title>
+  <meta name="description"
+    content="Mike Gvozdev, applied AI engineer in Montréal. LLM systems from proof of concept to production.">
+  <link rel="canonical" href="https://gvzdv.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gvzdv.github.io/">
+  <meta property="og:title" content="Mike Gvozdev, applied AI engineer">
+  <meta property="og:description"
+    content="Mike Gvozdev, applied AI engineer in Montréal. LLM systems from proof of concept to production.">
+  <meta property="og:image" content="https://gvzdv.github.io/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#e5e4da" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09111a" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script>try { var e = localStorage.getItem('mg-edition'); if (e === 'light' || e === 'dark') document.documentElement.setAttribute('data-theme', e) } catch (_) { }</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@100..125,300..800&family=Exo+2:wght@300;500;700&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
 </head>
+
 <body>
-<div class="report">
-  <aside class="stage" id="stage" aria-label="Plates">
-    <div class="plate is-on" data-k="0" style="--cx:6cqw;--cy:66cqh">
-      <canvas aria-hidden="true"></canvas>
-      <p class="pl-ser" aria-hidden="true">engineering intelligence</p>
-      <p class="pl-cap" aria-hidden="true">applied ai</p>
-      <p class="pl-credit" aria-hidden="true">after erik nitsche</p>
-      <h1 class="pl-wm">Mike Gvozdev</h1>
-      <p class="pl-print" aria-hidden="true"><span>printed in montréal, 2026</span><span>plate i</span></p>
-    </div>
-    <div class="plate" data-k="1" style="--cx:62cqw;--cy:69cqh" aria-hidden="true">
-      <canvas></canvas>
-      <p class="pl-ser">engineering intelligence</p>
-      <p class="pl-cap">architecture</p>
-      <p class="pl-credit">after erik nitsche</p>
-      <p class="pl-wm">Mike Gvozdev</p>
-      <p class="pl-print"><span>printed in montréal, 2026</span><span>plate ii</span></p>
-    </div>
-    <div class="plate" data-k="2" style="--cx:63cqw;--cy:71cqh" aria-hidden="true">
-      <canvas></canvas>
-      <p class="pl-ser">engineering intelligence</p>
-      <p class="pl-cap">flight operations</p>
-      <p class="pl-credit">after erik nitsche</p>
-      <p class="pl-wm">Mike Gvozdev</p>
-      <p class="pl-print"><span>printed in montréal, 2026</span><span>plate iii</span></p>
-    </div>
-    <div class="plate" data-k="3" style="--cx:6cqw;--cy:44cqh" aria-hidden="true">
-      <canvas></canvas>
-      <p class="pl-ser">engineering intelligence</p>
-      <p class="pl-cap">experiments</p>
-      <p class="pl-credit">after erik nitsche</p>
-      <p class="pl-wm">Mike Gvozdev</p>
-      <p class="pl-print"><span>printed in montréal, 2026</span><span>plate iv</span></p>
-    </div>
-    <div class="plate" data-k="4" style="--cx:6cqw;--cy:58cqh" aria-hidden="true">
-      <canvas></canvas>
-      <p class="pl-ser">engineering intelligence</p>
-      <p class="pl-cap">open channels</p>
-      <p class="pl-credit">after erik nitsche</p>
-      <p class="pl-wm">Mike Gvozdev</p>
-      <p class="pl-print"><span>printed in montréal, 2026</span><span>plate v</span></p>
-    </div>
-  </aside>
-
-  <main class="pages" id="pages">
-    <header class="runhead">
-      <span class="rh-l mono">M. Gvozdev<span class="long"> / Annual report 2026</span></span>
-      <span class="rh-c"><button class="rh-turn" id="pg-prev" type="button" aria-label="Previous page"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M6.5 1.5 3 5l3.5 3.5"/></svg></button><span class="rh-now mono" id="rh-now" aria-live="polite"><b>p. 01</b>&emsp;cover</span><button class="rh-turn" id="pg-next" type="button" aria-label="Next page"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M3.5 1.5 7 5 3.5 8.5"/></svg></button></span>
-      <button class="switch" id="theme" type="button" aria-label="Switch to the night edition">
-        <span class="sw-l sw-day">Day</span><span class="sw-track"><span class="sw-knob"></span></span><span class="sw-l sw-night">Night</span>
-      </button>
-    </header>
-
-    <div class="col">
-    <!-- COVER -->
-    <section class="sec cover" id="cover" data-plate="0" data-cap="applied ai" data-folio="01" data-name="cover">
-      <div class="sec-head">
-        <p class="kicker">Annual report 2026</p>
-        <span class="folio mono">p. 01</span>
+  <div class="report">
+    <aside class="stage" id="stage" aria-label="Plates">
+      <div class="plate is-on" data-k="0" style="--cx:6cqw;--cy:66cqh">
+        <canvas aria-hidden="true"></canvas>
+        <p class="pl-ser" aria-hidden="true">engineering intelligence</p>
+        <p class="pl-cap" aria-hidden="true">applied ai</p>
+        <p class="pl-credit" aria-hidden="true">after erik nitsche</p>
+        <h1 class="pl-wm">Mike Gvozdev</h1>
+        <p class="pl-print" aria-hidden="true"><span>printed in montréal, 2026</span><span>plate i</span></p>
       </div>
-      <p class="title">applied&nbsp;ai engineer</p>
-      <p class="subtitle">LLM systems, from proof of concept to production</p>
-      <p class="lede">I design, build, and ship production LLM applications for enterprise clients, and I own them end to end: discovery, architecture, proof of concept, deployment, and evaluation. Before AI, I spent twelve years delivering industrial projects for clients.</p>
-      <dl class="facts">
-        <dt class="mono">Now</dt><dd>Applied AI Engineer Consultant, Bitovi</dd>
-        <dt class="mono">Based in</dt><dd>Montréal, Québec (Eastern Time)</dd>
-        <dt class="mono">Practice</dt><dd>Applied AI / Engineering / Software architecture / Product engineering</dd>
-        <dt class="mono">Elsewhere</dt><dd><a href="https://github.com/gvzdv" target="_blank" rel="noopener">GitHub</a> / <a href="https://www.linkedin.com/in/mike-gvozdev" target="_blank" rel="noopener">LinkedIn</a> / <a href="https://huggingface.co/gvozdev" target="_blank" rel="noopener">Hugging Face</a></dd>
-      </dl>
-      <nav class="toc" aria-label="Contents">
-        <p class="kicker">Contents</p>
-        <ol>
-          <li><a href="#letter"><span class="toc-t">to the reader</span><span class="toc-lead"></span><span class="mono">03</span></a></li>
-          <li><a href="#highlights"><span class="toc-t">highlights of the year</span><span class="toc-lead"></span><span class="mono">04</span></a></li>
-          <li><a href="#divisions"><span class="toc-t">divisions</span><span class="toc-lead"></span><span class="mono">06</span></a></li>
-          <li><a href="#operations"><span class="toc-t">record of operations</span><span class="toc-lead"></span><span class="mono">08</span></a></li>
-          <li><a href="#research"><span class="toc-t">research &amp; development</span><span class="toc-lead"></span><span class="mono">11</span></a></li>
-          <li><a href="#personnel"><span class="toc-t">personnel file</span><span class="toc-lead"></span><span class="mono">13</span></a></li>
-          <li><a href="#correspondence"><span class="toc-t">correspondence</span><span class="toc-lead"></span><span class="mono">14</span></a></li>
-        </ol>
-      </nav>
-      <p class="howto"><span class="mono">How to read</span><span>Scroll as usual, or turn the pages: lift the corner of the page<span class="k-only">, press <kbd>←</kbd> <kbd>→</kbd></span><span class="t-only">, or swipe sideways</span>.</span></p>
-    </section>
+      <div class="plate" data-k="1" style="--cx:62cqw;--cy:69cqh" aria-hidden="true">
+        <canvas></canvas>
+        <p class="pl-ser">engineering intelligence</p>
+        <p class="pl-cap">architecture</p>
+        <p class="pl-credit">after erik nitsche</p>
+        <p class="pl-wm">Mike Gvozdev</p>
+        <p class="pl-print"><span>printed in montréal, 2026</span><span>plate ii</span></p>
+      </div>
+      <div class="plate" data-k="2" style="--cx:63cqw;--cy:71cqh" aria-hidden="true">
+        <canvas></canvas>
+        <p class="pl-ser">engineering intelligence</p>
+        <p class="pl-cap">flight operations</p>
+        <p class="pl-credit">after erik nitsche</p>
+        <p class="pl-wm">Mike Gvozdev</p>
+        <p class="pl-print"><span>printed in montréal, 2026</span><span>plate iii</span></p>
+      </div>
+      <div class="plate" data-k="3" style="--cx:6cqw;--cy:44cqh" aria-hidden="true">
+        <canvas></canvas>
+        <p class="pl-ser">engineering intelligence</p>
+        <p class="pl-cap">experiments</p>
+        <p class="pl-credit">after erik nitsche</p>
+        <p class="pl-wm">Mike Gvozdev</p>
+        <p class="pl-print"><span>printed in montréal, 2026</span><span>plate iv</span></p>
+      </div>
+      <div class="plate" data-k="4" style="--cx:6cqw;--cy:58cqh" aria-hidden="true">
+        <canvas></canvas>
+        <p class="pl-ser">engineering intelligence</p>
+        <p class="pl-cap">open channels</p>
+        <p class="pl-credit">after erik nitsche</p>
+        <p class="pl-wm">Mike Gvozdev</p>
+        <p class="pl-print"><span>printed in montréal, 2026</span><span>plate v</span></p>
+      </div>
+    </aside>
 
-    <!-- LETTER -->
-    <section class="sec" id="letter" data-plate="0" data-cap="applied ai" data-folio="03" data-name="to the reader">
-      <div class="sec-head">
-        <div><p class="kicker">Letter</p><h2>to the reader</h2></div>
-        <span class="folio mono">p. 03</span>
-      </div>
-      <div class="letter">
-        <p class="salute">To the reader,</p>
-        <p>I came to software from the field. For twelve years I ran industrial projects in project logistics and specialized rigging: more than 650 of them, with budgets up to $2.3M and teams of up to 30 people across six locations. That work taught me to scope carefully, to speak plainly with everyone from engineers to executives, and to finish what I start.</p>
-        <p>In 2023 I started building with large language models full time. Since then I have shipped RAG systems, agentic workflows, MCP servers, and evaluation pipelines for enterprise clients, a university research lab, and a startup I co-founded. At Bitovi I now own the architecture and delivery of an AI application that 6,000 people use every day.</p>
-        <p>I still work the way a project manager does. I start from the problem, put a prototype in front of people early, and measure whether it worked. The pages that follow cover the divisions of that practice, the record of operations, and a few experiments.</p>
-        <div class="sign">
-          <span class="sign-name">Mike Gvozdev</span>
-          <span class="mono">Montréal, November 2026</span>
-        </div>
-      </div>
-    </section>
+    <main class="pages" id="pages">
+      <header class="runhead">
+        <span class="rh-l mono">M. Gvozdev<span class="long"> / Annual report 2026</span></span>
+        <span class="rh-c"><button class="rh-turn" id="pg-prev" type="button" aria-label="Previous page"><svg
+              viewBox="0 0 10 10" aria-hidden="true">
+              <path d="M6.5 1.5 3 5l3.5 3.5" />
+            </svg></button><span class="rh-now mono" id="rh-now" aria-live="polite"><b>p.
+              01</b>&emsp;cover</span><button class="rh-turn" id="pg-next" type="button" aria-label="Next page"><svg
+              viewBox="0 0 10 10" aria-hidden="true">
+              <path d="M3.5 1.5 7 5 3.5 8.5" />
+            </svg></button></span>
+        <button class="switch" id="theme" type="button" aria-label="Switch to the night edition">
+          <span class="sw-l sw-day">Day</span><span class="sw-track"><span class="sw-knob"></span></span><span
+            class="sw-l sw-night">Night</span>
+        </button>
+      </header>
 
-    <!-- HIGHLIGHTS -->
-    <section class="sec" id="highlights" data-plate="0" data-cap="applied ai" data-folio="04" data-name="highlights">
-      <div class="sec-head">
-        <div><p class="kicker">Highlights</p><h2>highlights of the year</h2></div>
-        <span class="folio mono">p. 04</span>
-      </div>
-      <div class="ledger-h mono" aria-hidden="true"><span>Figure</span><span>Measure</span><span style="text-align:right">Source</span></div>
-      <ul class="ledger">
-        <li><span class="fig">6,000</span><p>daily users of a greenfield enterprise AI application, a RAG chatbot with LLM-assisted messaging that I architected and delivered end to end</p><span class="src mono">Bitovi, 2026</span></li>
-        <li><span class="fig">100,000<i>+</i></span><p>employees at the Fortune 500 company whose internal platform my AI tools are built into</p><span class="src mono">Bitovi, 2025–26</span></li>
-        <li><span class="fig">20–30<i>×</i></span><p>lower single-call latency, with 2–3× more throughput, after infrastructure upgrades on McGill's IMAGE platform</p><span class="src mono">McGill SRL, 2025</span></li>
-        <li><span class="fig" data-gh="stars">2.7<i>K</i></span><p>GitHub stars for claudish-to-english, an open-source Claude Code plugin released in August 2026</p><span class="src mono">Open source, 2026</span></li>
-        <li><span class="fig">126<i>K</i></span><p>users in one week for a generative AI charity app, with donations up 4×</p><span class="src mono">Baby Pigeon, 2023–24</span></li>
-        <li><span class="fig">95<i>%</i></span><p>less document processing time after an LLM automation I scoped and shipped for Aplicar</p><span class="src mono">Baby Pigeon, 2023–24</span></li>
-        <li><span class="fig">650<i>+</i></span><p>industrial projects delivered before software, with budgets up to $2.3M</p><span class="src mono">2010–2022</span></li>
-      </ul>
-      <p class="ledger-note mono">Figures as of November 2026</p>
-    </section>
-
-    <!-- DIVISIONS -->
-    <section class="sec" id="divisions" data-plate="1" data-cap="architecture" data-folio="06" data-name="divisions">
-      <div class="strip" data-k="1" aria-hidden="true"><canvas></canvas><span class="strip-cap"><span class="mono">plate ii</span>architecture</span></div>
-      <div class="sec-head">
-        <div><p class="kicker">Divisions</p><h2>four divisions</h2></div>
-        <span class="folio mono">p. 06</span>
-      </div>
-      <p class="lede" style="margin-bottom:40px">The practice runs as four divisions. Most projects draw on all four at once.</p>
-      <div class="divs">
-        <article class="div">
-          <div class="div-top">
-            <h3>applied ai</h3>
-            <svg viewBox="0 0 46 46" aria-hidden="true"><path class="g-ink" stroke-width="1.2" d="M5 35 16 13 30 20 41 7M16 13l6 26M30 20l9 15"/><circle class="g-fill-ink" cx="5" cy="35" r="2.3"/><circle class="g-fill-ink" cx="16" cy="13" r="2.6"/><circle class="g-fill-ink" cx="41" cy="7" r="2"/><circle class="g-fill-ink" cx="22" cy="39" r="2"/><circle class="g-fill-ink" cx="39" cy="35" r="2.3"/><circle class="g-red" cx="30" cy="20" r="3.6"/></svg>
+      <div class="col">
+        <!-- COVER -->
+        <section class="sec cover" id="cover" data-plate="0" data-cap="applied ai" data-folio="01" data-name="cover">
+          <div class="sec-head">
+            <p class="kicker">Annual report 2026</p>
+            <span class="folio mono">p. 01</span>
           </div>
-          <p>Production LLM applications: retrieval-augmented generation, agentic and multi-agent workflows, MCP servers and tools, structured outputs, guardrails, and the evaluation that shows whether any of it works.</p>
-          <div class="rep"><span class="mono">Case</span><span>RAG chatbot and LLM-assisted messaging for 6,000 daily users</span></div>
-          <details class="more"><summary><span class="pm" aria-hidden="true"></span>Equipment</summary>
-            <p class="equip"><b>Agents:</b> LangGraph, LangChain, OpenAI Agents SDK, Claude Agent SDK, Claude Code, MCP. <b>Models:</b> fine-tuning with LoRA, QLoRA, and PEFT; quantization with GPTQ, AWQ, and INT8; inference on vLLM; few-shot and chain-of-thought prompting. <b>Ops:</b> evaluation pipelines, LiteLLM, Langfuse, Weights &amp; Biases, embeddings and vector search.</p>
-          </details>
-        </article>
-        <article class="div">
-          <div class="div-top">
-            <h3>engineering</h3>
-            <svg viewBox="0 0 46 46" aria-hidden="true"><path class="g-ink" stroke-width="1.1" d="M3 7h40M3 13h40M3 19h40M3 25h40M3 31h40M3 37h40M3 43h40"/><rect class="g-fill-paper" x="13" y="16" width="20" height="12"/><rect class="g-red" x="19.5" y="16" width="7" height="12"/><path class="g-ink" stroke-width="1.1" d="M13 16h20v12H13z"/></svg>
-          </div>
-          <p>Hands-on build in Python and TypeScript: FastAPI and Flask services, Node.js, REST APIs, SQL, containers, and CI/CD. I write the code I design, and I stay on it through production.</p>
-          <div class="rep"><span class="mono">Case</span><span>Infrastructure upgrades that cut single-call latency 20–30×</span></div>
-          <details class="more"><summary><span class="pm" aria-hidden="true"></span>Equipment</summary>
-            <p class="equip"><b>Languages:</b> Python (FastAPI, Flask), TypeScript and JavaScript (Node.js), SQL (PostgreSQL, MySQL). <b>ML:</b> PyTorch, Transformers, FAISS, Qdrant, Pinecone. <b>Delivery:</b> Docker, Kubernetes, Terraform, GitHub Actions, CI/CD.</p>
-          </details>
-        </article>
-        <article class="div">
-          <div class="div-top">
-            <h3>software architecture</h3>
-            <svg viewBox="0 0 46 46" aria-hidden="true"><path class="g-ink" stroke-width="1.2" d="M23 1v15M14 9l9 7 9-7M23 45V31M14 38l9-7 9 7"/><rect class="g-fill-paper" x="12" y="17" width="22" height="10"/><rect class="g-red" x="19.5" y="17" width="7" height="10"/><path class="g-ink" stroke-width="1.1" d="M12 17h22v10H12z"/></svg>
-          </div>
-          <p>Solution design that starts in discovery and holds up in production: how models, data pipelines, APIs, and frontends fit together, and where the latency and the cost go.</p>
-          <div class="rep"><span class="mono">Case</span><span>ML architecture for IMAGE, McGill's open-source accessibility platform, across frontend, orchestration, and hardware</span></div>
-          <details class="more"><summary><span class="pm" aria-hidden="true"></span>Equipment</summary>
-            <p class="equip"><b>Design:</b> solutions architecture, ML component integration, data ETL pipelines, user-safety guardrails, SQL and vector databases. <b>Cloud:</b> GCP (Cloud Run, Vertex AI), AWS (Bedrock, Lambda, EC2, S3, ECS), Azure.</p>
-          </details>
-        </article>
-        <article class="div">
-          <div class="div-top">
-            <h3>product engineering</h3>
-            <svg viewBox="0 0 46 46" aria-hidden="true"><path class="g-ink" stroke-width="1.2" d="M2 41h42"/><path class="g-ink" stroke-width="3.4" stroke-linecap="round" d="M9 41V27M16 41V15M23 41V22M37 41V24"/><path class="g-redline" stroke-width="3.4" stroke-linecap="round" d="M30 41V8"/></svg>
-          </div>
-          <p>From a blank page to something people use: customer discovery, proof-of-concept and MVP builds, launches, and growth. Twelve years of client-facing delivery taught me to scope with the customer, not around them.</p>
-          <div class="rep"><span class="mono">Case</span><span>A charity app scaled to 126K users in one week; co-founder and CTO at Ingsikt</span></div>
-          <details class="more"><summary><span class="pm" aria-hidden="true"></span>Equipment</summary>
-            <p class="equip"><b>Delivery:</b> customer discovery, PoC, MVP, and proof-of-value builds, presales-to-postsales ownership. <b>Teams:</b> Scrum and Kanban, stakeholder management, cross-functional coordination, mentorship.</p>
-          </details>
-        </article>
-      </div>
-    </section>
-
-    <!-- OPERATIONS -->
-    <section class="sec" id="operations" data-plate="2" data-cap="flight operations" data-folio="08" data-name="operations">
-      <div class="strip" data-k="2" aria-hidden="true"><canvas></canvas><span class="strip-cap"><span class="mono">plate iii</span>flight operations</span></div>
-      <div class="sec-head">
-        <div><p class="kicker">Operations</p><h2>record of operations</h2></div>
-        <span class="folio mono">p. 08</span>
-      </div>
-      <p class="lede" style="margin-bottom:34px">Applied AI since 2023, built on twelve years of delivering projects for clients. Open any entry for the detail.</p>
-
-
-      <div class="ops-tools"><span class="mono" style="color:var(--ink-3)">Seven positions, newest first</span><button class="linkbtn" type="button" id="expand-all">Expand all</button></div>
-      <div class="jobs">
-        <details class="job" id="job-bitovi">
-          <summary><span class="j-when mono">Nov 2025 – now</span><span class="j-role">Applied AI Engineer Consultant</span><span class="pm" aria-hidden="true"></span><span class="j-org">Bitovi, Chicago, IL (remote)</span><span class="j-gist">AI tools for a Fortune 500 platform, and a greenfield app with 6,000 daily users.</span></summary>
-          <ul>
-            <li>Developed and integrated AI-driven tools into the internal platform of a Fortune 500 company with more than 100,000 employees.</li>
-            <li>Owned architecture and delivery of a greenfield enterprise AI application for 6,000 daily users, a RAG-based chatbot with LLM-assisted messaging, end to end in Python from discovery and solution design to production readiness.</li>
-            <li>Designed and deployed agentic workflows, an MCP server and tools, context-engineering utilities, data ETL pipelines, REST APIs, SQL and vector databases, and user-safety guardrails.</li>
-          </ul>
-        </details>
-        <details class="job" id="job-mcgill">
-          <summary><span class="j-when mono">Feb – Dec 2025</span><span class="j-role">ML Engineer &amp; Solutions Architect</span><span class="pm" aria-hidden="true"></span><span class="j-org">Shared Reality Lab, McGill University, Montréal (hybrid)</span><span class="j-gist">ML architecture for IMAGE, an open-source multimodal accessibility platform.</span></summary>
-          <ul>
-            <li>Defined the ML architecture for IMAGE and its integration across frontend, orchestration, and hardware layers; built multimodal LLM components that interpret visual information.</li>
-            <li>Cut single-call latency 20–30× and improved throughput 2–3× through infrastructure upgrades; raised prediction accuracy through model selection, a revised data pipeline, structured outputs, and prompt engineering.</li>
-            <li>Built a component that converts textbook diagrams into structured formats for visual, audio, and haptic accessibility.</li>
-            <li>Deployed pipelines for model evaluation and selection, prompt testing, and hyperparameter tuning.</li>
-          </ul>
-        </details>
-        <details class="job" id="job-textlayer">
-          <summary><span class="j-when mono">Jun – Aug 2025</span><span class="j-role">AI Engineer</span><span class="pm" aria-hidden="true"></span><span class="j-org">Textlayer, Ottawa (remote)</span><span class="j-gist">Agentic tools and an evaluation framework for enterprise deployments.</span></summary>
-          <ul>
-            <li>Shipped agentic tools for enterprise deployments, including Notion natural-language search and text-to-SQL, and an evaluation framework for response, tool-call, and structured-output accuracy.</li>
-          </ul>
-        </details>
-        <details class="job" id="job-ingsikt">
-          <summary><span class="j-when mono">Feb – Jul 2025</span><span class="j-role">Co-founder &amp; CTO</span><span class="pm" aria-hidden="true"></span><span class="j-org">Ingsikt, Oslo (remote)</span><span class="j-gist">Real-time meeting feedback, built on live LLM inference.</span></summary>
-          <ul>
-            <li>Designed and prototyped a real-time meeting-feedback product built on live LLM inference, with a recommendation system that tracks key metrics for meeting leaders. Owned product vision, architecture, and delivery.</li>
-          </ul>
-        </details>
-        <details class="job" id="job-bps">
-          <summary><span class="j-when mono">Jan 2023 – Jan 2025</span><span class="j-role">Applied AI Engineer</span><span class="pm" aria-hidden="true"></span><span class="j-org">Baby Pigeon Studio, Vancouver (hybrid)</span><span class="j-gist">Generative AI products and client automation, from scoping to launch.</span></summary>
-          <ul>
-            <li>Scoped and shipped an LLM document-automation solution in production for the client Aplicar, cutting processing time by 95%.</li>
-            <li>Built and deployed a RAG chatbot over regulatory and internal documentation for a construction-industry client.</li>
-            <li>Led design, development, and launch of the generative AI products fixgrammar.ai, myEras, and NaiVIGATOR; scaled a charity app to 126K users in one week, growing donations 4×.</li>
-            <li>Created research applications exploring LLM, VLM, and CNN capabilities: Project Cloudberry, Slouch Detector, and AI Rainbolt.</li>
-          </ul>
-        </details>
-        <details class="job" id="job-apex">
-          <summary><span class="j-when mono">Jan 2020 – Sep 2022</span><span class="j-role">Project Manager</span><span class="pm" aria-hidden="true"></span><span class="j-org">Apex Specialized Rigging &amp; Moving, Vancouver (hybrid)</span><span class="j-gist">50+ industrial projects end to end, as the primary client contact.</span></summary>
-          <ul>
-            <li>Delivered 50+ industrial projects end to end as the primary client contact, from presales scoping through planning, execution, and closure.</li>
-            <li>Introduced Scrum, cutting planning time by 5–15%.</li>
-          </ul>
-        </details>
-        <details class="job" id="job-across">
-          <summary><span class="j-when mono">May 2010 – Sep 2019</span><span class="j-role">Lead Project Manager</span><span class="pm" aria-hidden="true"></span><span class="j-org">Across Project Logistics &amp; Keen-Mark Group, Saint Petersburg</span><span class="j-gist">600+ projects, budgets up to $2.3M, teams of 10 to 30.</span></summary>
-          <ul>
-            <li>Directed full-cycle delivery of 600+ projects with budgets up to $2.3M.</li>
-            <li>Managed engineering teams of 10 to 30 people, ten project teams, and 20+ stakeholders across six locations.</li>
-          </ul>
-        </details>
-      </div>
-    </section>
-
-    <!-- R&D -->
-    <section class="sec" id="research" data-plate="3" data-cap="experiments" data-folio="11" data-name="research &amp; development">
-      <div class="strip" data-k="3" aria-hidden="true"><canvas></canvas><span class="strip-cap"><span class="mono">plate iv</span>experiments</span></div>
-      <div class="sec-head">
-        <div><p class="kicker">R &amp; D</p><h2>research &amp; development</h2></div>
-        <span class="folio mono">p. 11</span>
-      </div>
-      <p class="lede" style="margin-bottom:34px">Side projects and research builds. Each one tests a single question about what models can do, or how people want to use them.</p>
-
-      <article class="feature">
-        <div class="feat-top">
-          <div>
-            <span class="mono">Featured open source, Aug 2026</span>
-            <h3 class="feat-title">claudish-to-english</h3>
-          </div>
-          <div class="feat-stats">
-            <div><span class="fig" data-gh="stars">2.7<i>K</i></span><span class="mono">GitHub stars</span></div>
-            <div><span class="fig" data-gh="forks">132</span><span class="mono">forks</span></div>
-          </div>
-        </div>
-        <p>A Claude Code plugin that shows a plain-English rewrite of each assistant message. The rewrite comes from a local model through ollama by default, or from the codex CLI, the Anthropic API, or any OpenAI-compatible API. It only changes what you read: Claude's reasoning and the saved transcript keep the original, and every hook fails open, so a provider outage never hides an answer.</p>
-        <div class="xlate">
-          <figure><span class="mono">Claudish</span><q>Refactored the hydration boundary so the selector graph memoizes upstream; retries are idempotent now and short-circuit on stale cache keys.</q></figure>
-          <span class="ar" aria-hidden="true">→</span>
-          <figure><span class="mono">English</span><q>I changed how the page loads its data so it repeats less work. When a request fails and is retried, it no longer runs twice.</q></figure>
-        </div>
-        <div class="feat-links"><a href="https://github.com/gvzdv/claudish-to-english" target="_blank" rel="noopener">github.com/gvzdv/claudish-to-english ↗</a></div>
-      </article>
-
-      <details class="lab-more">
-        <summary><span class="pm" aria-hidden="true"></span><span class="lm-t"><span class="lm-closed">See more research projects</span><span class="lm-open">Laboratory notebook</span></span><span class="lm-n mono">5 projects, 2024–2025</span></summary>
-        <ul class="lab">
-          <li class="exp"><div class="exp-top"><h4>wiktok</h4><span class="when mono">Jan 2025</span></div><p>A TikTok-style feed for Wikipedia. DeepSeek-V3 rewrites random articles in internet voices, from greentext biographies to tech-review inventions, and Google TTS narrates them over looping video.</p><span class="kit mono">FastAPI / React / DeepSeek-V3 / Google TTS</span><a href="https://github.com/gvzdv/wiktok" target="_blank" rel="noopener">github.com/gvzdv/wiktok ↗</a></li>
-          <li class="exp"><div class="exp-top"><h4>naivigator</h4><span class="when mono">Oct 2024</span></div><p>An AI tour guide. Describe what you want to see, in any words, and it turns the request into places on a map.</p><span class="kit mono">LLM / Maps / JavaScript / Python</span><a href="https://github.com/gvzdv/naivigator" target="_blank" rel="noopener">github.com/gvzdv/naivigator ↗</a></li>
-          <li class="exp"><div class="exp-top"><h4>fixgrammar</h4><span class="when mono">Oct 2024</span></div><p>A writing tool for the job people kept handing to ChatGPT: it corrects spelling, grammar, and punctuation, and nothing else.</p><span class="kit mono">LLM / JavaScript</span><a href="https://github.com/gvzdv/fixgrammar" target="_blank" rel="noopener">github.com/gvzdv/fixgrammar ↗</a></li>
-          <li class="exp"><div class="exp-top"><h4>slouch detector</h4><span class="when mono">Jan 2024</span></div><p>Webcam pose tracking that watches your ear, shoulder, and knee, keeps score of your posture, and promises boba tea for a straight back.</p><span class="kit mono">Pose estimation / CNN / Python</span><a href="https://github.com/gvzdv/pose" target="_blank" rel="noopener">github.com/gvzdv/pose ↗</a></li>
-          <li class="exp"><div class="exp-top"><h4>ai rainbolt</h4><span class="when mono">Jan 2024</span></div><p>A vision model plays GeoGuessr. Press space and it screenshots the round, makes its guess, and says it out loud through ElevenLabs.</p><span class="kit mono">Vision LLM / OpenAI / ElevenLabs</span><a href="https://github.com/gvzdv/ai-rainbolt" target="_blank" rel="noopener">github.com/gvzdv/ai-rainbolt ↗</a></li>
-        </ul>
-      </details>
-    </section>
-
-    <!-- PERSONNEL -->
-    <section class="sec" id="personnel" data-plate="4" data-cap="personnel file" data-folio="13" data-name="personnel file">
-      <div class="strip" data-k="4" aria-hidden="true"><canvas></canvas><span class="strip-cap"><span class="mono">plate v</span>personnel file</span></div>
-      <div class="sec-head">
-        <div><p class="kicker">Personnel</p><h2>personnel file</h2></div>
-        <span class="folio mono">p. 13</span>
-      </div>
-      <div class="files">
-        <div class="file">
-          <span class="mono">Education &amp; certification</span>
-          <dl>
-            <div><dt>Claude Certified Architect</dt><dd>Anthropic, 2026</dd></div>
-            <div><dt>MSc, Engineering Management, with honours</dt><dd>Saint Petersburg State University of Architecture and Civil Engineering, 2010</dd></div>
-            <div><dt>Professional Scrum Master I</dt><dd>Scrum.org, 2022</dd></div>
-            <div><dt>Bullet Proof Manager leadership program</dt><dd>Crestcom International, 2022</dd></div>
+          <p class="title">applied&nbsp;ai engineer</p>
+          <p class="subtitle">LLM systems, from proof of concept to production</p>
+          <p class="lede">I design, build, and ship production LLM applications for enterprise clients, and I own them
+            end to end: discovery, architecture, proof of concept, deployment, and evaluation. Before AI, I spent twelve
+            years delivering industrial projects for clients.</p>
+          <dl class="facts">
+            <dt class="mono">Now</dt>
+            <dd>Applied AI Engineer Consultant, Bitovi</dd>
+            <dt class="mono">Based in</dt>
+            <dd>Montréal, Québec (Eastern Time)</dd>
+            <dt class="mono">Practice</dt>
+            <dd>Applied AI / Software architecture / Software development / Product engineering</dd>
+            <dt class="mono">Elsewhere</dt>
+            <dd><a href="https://github.com/gvzdv" target="_blank" rel="noopener">GitHub</a> / <a
+                href="https://www.linkedin.com/in/mike-gvozdev" target="_blank" rel="noopener">LinkedIn</a> / <a
+                href="https://huggingface.co/gvozdev" target="_blank" rel="noopener">Hugging Face</a></dd>
           </dl>
-        </div>
-        <div class="file">
-          <span class="mono">Languages</span>
-          <ul class="langs">
-            <li><b lang="en">english</b><span class="mono">Fluent</span></li>
-            <li><b lang="ru">русский</b><span class="mono">Native</span></li>
-            <li><b lang="no">norsk</b><span class="mono">Intermediate</span></li>
-            <li class="learning"><b lang="fr">français</b><span class="mono">Learning</span></li>
+          <nav class="toc" aria-label="Contents">
+            <p class="kicker">Contents</p>
+            <ol>
+              <li><a href="#letter"><span class="toc-t">to the reader</span><span class="toc-lead"></span><span
+                    class="mono">03</span></a></li>
+              <li><a href="#highlights"><span class="toc-t">highlights of the year</span><span
+                    class="toc-lead"></span><span class="mono">04</span></a></li>
+              <li><a href="#divisions"><span class="toc-t">divisions</span><span class="toc-lead"></span><span
+                    class="mono">06</span></a></li>
+              <li><a href="#operations"><span class="toc-t">record of operations</span><span
+                    class="toc-lead"></span><span class="mono">08</span></a></li>
+              <li><a href="#research"><span class="toc-t">research &amp; development</span><span
+                    class="toc-lead"></span><span class="mono">11</span></a></li>
+              <li><a href="#personnel"><span class="toc-t">personnel file</span><span class="toc-lead"></span><span
+                    class="mono">13</span></a></li>
+              <li><a href="#correspondence"><span class="toc-t">correspondence</span><span class="toc-lead"></span><span
+                    class="mono">14</span></a></li>
+            </ol>
+          </nav>
+          <p class="howto"><span class="mono">How to read</span><span>Scroll as usual, or turn the pages: lift the
+              corner of the page<span class="k-only">, press <kbd>←</kbd> <kbd>→</kbd></span><span class="t-only">, or
+                swipe sideways</span>.</span></p>
+        </section>
+
+        <!-- LETTER -->
+        <section class="sec" id="letter" data-plate="0" data-cap="applied ai" data-folio="03" data-name="to the reader">
+          <div class="sec-head">
+            <div>
+              <p class="kicker">Letter</p>
+              <h2>to the reader</h2>
+            </div>
+            <span class="folio mono">p. 03</span>
+          </div>
+          <div class="letter">
+            <!-- <p class="salute">To the reader,</p> -->
+            <p>I came to applied AI from the field. For twelve years, I ran industrial projects in project logistics and
+              specialized rigging: more than 650 of them, with budgets up to $2.3M and teams of up to 30 people across
+              six locations and multiple time zones. That work taught me to scope carefully, to speak plainly with
+              everyone from engineers to
+              executives, and to finish what I start.</p>
+            <p>In early 2023 I started building with machine learning models full time. Since then I have shipped RAG
+              tools,
+              agentic systems, MCP servers, and evaluation pipelines for enterprise clients, a university research
+              lab, and a startup I co-founded. At Bitovi I own the architecture and delivery of complex AI
+              applications
+              that thousands of people use every day.</p>
+            <p>I still work the way a project manager does. I start from the problem, prototype the solution, and gather
+              feedback from those who will use it before I start building. Read further for the divisions of that
+              practice, the
+              record of operations, and a few experiments.</p>
+            <div class="sign">
+              <span class="sign-name">Mike Gvozdev</span>
+              <span class="mono">Montréal, November 2026</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- HIGHLIGHTS -->
+        <section class="sec" id="highlights" data-plate="0" data-cap="applied ai" data-folio="04"
+          data-name="highlights">
+          <div class="sec-head">
+            <div>
+              <p class="kicker">Highlights</p>
+              <h2>highlights of the year</h2>
+            </div>
+            <span class="folio mono">p. 04</span>
+          </div>
+          <div class="ledger-h mono" aria-hidden="true"><span>Figure</span><span>Measure</span><span
+              style="text-align:right">Source</span></div>
+          <ul class="ledger">
+            <li><span class="fig">6,000</span>
+              <p>daily users of a greenfield enterprise AI application, a RAG chatbot with LLM-assisted messaging that I
+                architected and delivered end to end</p><span class="src mono">Bitovi, 2026</span>
+            </li>
+            <li><span class="fig">100,000<i>+</i></span>
+              <p>employees at the Fortune 500 company whose internal platform my AI tools are built into</p><span
+                class="src mono">Bitovi, 2025–26</span>
+            </li>
+            <li><span class="fig">20–30<i>×</i></span>
+              <p>lower single-call latency, with 2–3× more throughput, after infrastructure upgrades on McGill's IMAGE
+                platform</p><span class="src mono">McGill SRL, 2025</span>
+            </li>
+            <li><span class="fig" data-gh="stars">2.7<i>K</i></span>
+              <p>GitHub stars for claudish-to-english, an open-source Claude Code plugin released in August 2026</p>
+              <span class="src mono">Open source, 2026</span>
+            </li>
+            <li><span class="fig">126<i>K</i></span>
+              <p>users in one week for a generative AI charity app, with donations up 4×</p><span class="src mono">Baby
+                Pigeon, 2023–24</span>
+            </li>
+            <li><span class="fig">95<i>%</i></span>
+              <p>less document processing time after an LLM automation I scoped and shipped for Aplicar</p><span
+                class="src mono">Baby Pigeon, 2023–24</span>
+            </li>
+            <li><span class="fig">650<i>+</i></span>
+              <p>industrial projects delivered before software, with budgets up to $2.3M</p><span
+                class="src mono">2010–2022</span>
+            </li>
           </ul>
-          <p class="note">Nitsche's General Dynamics posters were printed in six languages. Counting generously, I'm at three.</p>
-        </div>
-      </div>
-    </section>
+          <p class="ledger-note mono">Figures as of November 2026</p>
+        </section>
 
-    <!-- CORRESPONDENCE -->
-    <section class="sec" id="correspondence" data-plate="4" data-cap="open channels" data-folio="14" data-name="correspondence">
-      <div class="sec-head">
-        <div><p class="kicker">Correspondence</p><h2>correspondence</h2></div>
-        <span class="folio mono">p. 14</span>
-      </div>
-      <p class="lede">Write about a project, a role, or a problem you'd like a second pair of eyes on. I answer from Montréal, on Eastern Time.</p>
-      <div class="mail">
-        <span class="mail-addr" id="mail">mv.gvozdev@gmail.com</span>
-        <button class="btn" type="button" id="copy-mail">Copy address</button>
-        <span class="btn-status mono" id="copy-status" aria-live="polite"></span>
-      </div>
-      <ul class="chan">
-        <li><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/mike-gvozdev" target="_blank" rel="noopener">linkedin.com/in/mike-gvozdev</a></li>
-        <li><span class="mono">GitHub</span><a href="https://github.com/gvzdv" target="_blank" rel="noopener">github.com/gvzdv</a></li>
-        <li><span class="mono">Hugging Face</span><a href="https://huggingface.co/gvozdev" target="_blank" rel="noopener">huggingface.co/gvozdev</a></li>
-        <li><span class="mono">Location</span><span>Montréal, Québec, Canada</span></li>
-      </ul>
-    </section>
+        <!-- DIVISIONS -->
+        <section class="sec" id="divisions" data-plate="1" data-cap="architecture" data-folio="06"
+          data-name="divisions">
+          <div class="strip" data-k="1" aria-hidden="true"><canvas></canvas><span class="strip-cap"><span
+                class="mono">plate ii</span>architecture</span></div>
+          <div class="sec-head">
+            <div>
+              <p class="kicker">Divisions</p>
+              <h2>four divisions</h2>
+            </div>
+            <span class="folio mono">p. 06</span>
+          </div>
+          <p class="lede" style="margin-bottom:40px">The practice runs as four divisions. Most projects draw on all four
+            at once.</p>
+          <div class="divs">
+            <article class="div">
+              <div class="div-top">
+                <h3>applied ai</h3>
+                <svg viewBox="0 0 46 46" aria-hidden="true">
+                  <path class="g-ink" stroke-width="1.2" d="M5 35 16 13 30 20 41 7M16 13l6 26M30 20l9 15" />
+                  <circle class="g-fill-ink" cx="5" cy="35" r="2.3" />
+                  <circle class="g-fill-ink" cx="16" cy="13" r="2.6" />
+                  <circle class="g-fill-ink" cx="41" cy="7" r="2" />
+                  <circle class="g-fill-ink" cx="22" cy="39" r="2" />
+                  <circle class="g-fill-ink" cx="39" cy="35" r="2.3" />
+                  <circle class="g-red" cx="30" cy="20" r="3.6" />
+                </svg>
+              </div>
+              <p>Production LLM applications: retrieval-augmented generation, agentic and multi-agent workflows, MCP
+                servers and tools, structured outputs, guardrails, and evaluation pipelines.</p>
+              <div class="rep"><span class="mono">Case</span><span>RAG chatbot and LLM-assisted messaging for 6,000
+                  daily users</span></div>
+              <details class="more">
+                <summary><span class="pm" aria-hidden="true"></span>Equipment</summary>
+                <p class="equip"><b>Agents:</b> LangGraph, LangChain, OpenAI Agents SDK, Claude Agent SDK, Claude Code,
+                  MCP.<br>
+                  <b>Models:</b> fine-tuning with LoRA, QLoRA, and PEFT; quantization with GPTQ, AWQ, and INT8;
+                  inference on vLLM; few-shot and chain-of-thought prompting.<br>
+                  <b>Ops:</b> evaluation pipelines, LiteLLM, Langfuse, Weights &amp; Biases, embeddings and vector
+                  search.</p>
+              </details>
+            </article>
+            <article class="div">
+              <div class="div-top">
+                <h3>software architecture</h3>
+                <svg viewBox="0 0 46 46" aria-hidden="true">
+                  <path class="g-ink" stroke-width="1.2" d="M23 1v15M14 9l9 7 9-7M23 45V31M14 38l9-7 9 7" />
+                  <rect class="g-fill-paper" x="12" y="17" width="22" height="10" />
+                  <rect class="g-red" x="19.5" y="17" width="7" height="10" />
+                  <path class="g-ink" stroke-width="1.1" d="M12 17h22v10H12z" />
+                </svg>
+              </div>
+              <p>Solution design that is conceived in discovery and implemented in production: how models, data
+                pipelines, APIs,
+                and frontends fit together, and how to make apps performant and scalable.</p>
+              <div class="rep"><span class="mono">Case</span><span>Data architecture and pipelines for internal tooling
+                  at the world's largest cruise corporation</span></div>
+              <details class="more">
+                <summary><span class="pm" aria-hidden="true"></span>Equipment</summary>
+                <p class="equip"><b>Design:</b> solutions architecture, ML component integration, data ETL pipelines,
+                  user-safety guardrails, SQL and vector databases.<br>
+                  <b>Cloud:</b> GCP (Cloud Run, Vertex AI), AWS (Bedrock, Lambda, EC2, S3, ECS), Azure.</p>
+              </details>
+            </article>
+            <article class="div">
+              <div class="div-top">
+                <h3>software development</h3>
+                <svg viewBox="0 0 46 46" aria-hidden="true">
+                  <path class="g-ink" stroke-width="1.1" d="M3 7h40M3 13h40M3 19h40M3 25h40M3 31h40M3 37h40M3 43h40" />
+                  <rect class="g-fill-paper" x="13" y="16" width="20" height="12" />
+                  <rect class="g-red" x="19.5" y="16" width="7" height="12" />
+                  <path class="g-ink" stroke-width="1.1" d="M13 16h20v12H13z" />
+                </svg>
+              </div>
+              <p>Hands-on build in Python and TypeScript: FastAPI and Flask services, Node.js, REST APIs, SQL,
+                containers, and CI/CD. I write well-structured, maintainable, testable code.</p>
+              <div class="rep"><span class="mono">Case</span><span>Components for IMAGE, McGill's open-source
+                  accessibility platform, across backend, orchestration, and infrastructure</span></div>
+              <details class="more">
+                <summary><span class="pm" aria-hidden="true"></span>Equipment</summary>
+                <p class="equip"><b>Languages:</b> Python (FastAPI, Flask), TypeScript and JavaScript (Node.js), SQL
+                  (PostgreSQL, MySQL).<br>
+                  <b>ML:</b> PyTorch, Transformers, FAISS, Qdrant, Pinecone.<br>
+                  <b>Delivery:</b> Docker, Kubernetes, Terraform, GitHub Actions, CI/CD.</p>
+              </details>
+            </article>
+            <article class="div">
+              <div class="div-top">
+                <h3>product engineering</h3>
+                <svg viewBox="0 0 46 46" aria-hidden="true">
+                  <path class="g-ink" stroke-width="1.2" d="M2 41h42" />
+                  <path class="g-ink" stroke-width="3.4" stroke-linecap="round"
+                    d="M9 41V27M16 41V15M23 41V22M37 41V24" />
+                  <path class="g-redline" stroke-width="3.4" stroke-linecap="round" d="M30 41V8" />
+                </svg>
+              </div>
+              <p>From pain point to solution: customer discovery, scoping, proof-of-concept and MVP builds,
+                launches, feedback-driven updates, maintenance, and growth.</p>
+              <div class="rep"><span class="mono">Case</span><span>Brand new internal tooling for enterprise executives
+                  that replaced a legacy macro-driven workflow</span></div>
+              <details class="more">
+                <summary><span class="pm" aria-hidden="true"></span>Equipment</summary>
+                <p class="equip"><b>Delivery:</b> customer discovery, PoC, MVP, and proof-of-value builds,
+                  presales-to-postsales ownership.<br>
+                  <b>Teams:</b> Scrum and Kanban, stakeholder management, cross-functional coordination,
+                  mentorship.</p>
+              </details>
+            </article>
+          </div>
+        </section>
 
-    <footer class="colophon">
-      <p>Set in Saira, Libre Franklin, and IBM Plex Mono. The plates are drawn in code after Erik Nitsche's posters and reports for General Dynamics, 1955–1960.</p>
-      <span class="mono">Printed in Montréal, 2026</span>
-    </footer>
-    </div>
-  </main>
-  <button class="corner" id="corner" type="button" aria-label="Turn the page"><span class="corner-lab mono">turn the page</span><span class="corner-folio mono" aria-hidden="true">03</span></button>
-</div>
+        <!-- OPERATIONS -->
+        <section class="sec" id="operations" data-plate="2" data-cap="flight operations" data-folio="08"
+          data-name="operations">
+          <div class="strip" data-k="2" aria-hidden="true"><canvas></canvas><span class="strip-cap"><span
+                class="mono">plate iii</span>flight operations</span></div>
+          <div class="sec-head">
+            <div>
+              <p class="kicker">Operations</p>
+              <h2>record of operations</h2>
+            </div>
+            <span class="folio mono">p. 08</span>
+          </div>
+          <p class="lede" style="margin-bottom:34px">Applied AI since 2023, built on twelve years of engineering project
+            delivery.</p>
+
+
+          <div class="ops-tools"><span class="mono" style="color:var(--ink-3)">Seven positions, newest
+              first</span><button class="linkbtn" type="button" id="expand-all">Expand all</button></div>
+          <div class="jobs">
+            <details class="job" id="job-bitovi">
+              <summary><span class="j-when mono">Nov 2025 – now</span><span class="j-role">Applied AI Engineer
+                  Consultant</span><span class="pm" aria-hidden="true"></span><span class="j-org">Bitovi, Chicago, IL
+                  (remote)</span><span class="j-gist">AI tools for a Fortune 500 platform, and a greenfield app with
+                  6,000 daily users.</span></summary>
+              <ul>
+                <li>Developed and integrated AI-driven tools into the internal platform of a Fortune 500 company with
+                  more than 100,000 employees.</li>
+                <li>Owned architecture and delivery of a greenfield enterprise AI application for 6,000 daily users, a
+                  RAG-based chatbot with LLM-assisted messaging, end to end in Python from discovery and solution design
+                  to production readiness.</li>
+                <li>Designed and deployed agentic workflows, an MCP server and tools, context-engineering utilities,
+                  data ETL pipelines, REST APIs, SQL and vector databases, and user-safety guardrails.</li>
+              </ul>
+            </details>
+            <details class="job" id="job-mcgill">
+              <summary><span class="j-when mono">Feb – Dec 2025</span><span class="j-role">ML Engineer &amp; Solutions
+                  Architect</span><span class="pm" aria-hidden="true"></span><span class="j-org">Shared Reality Lab,
+                  McGill University, Montréal (hybrid)</span><span class="j-gist">ML architecture for IMAGE, an
+                  open-source multimodal accessibility platform.</span></summary>
+              <ul>
+                <li>Defined the ML architecture for IMAGE and its integration across frontend, orchestration, and
+                  hardware layers; built multimodal LLM components that interpret visual information.</li>
+                <li>Cut single-call latency 20–30× and improved throughput 2–3× through infrastructure upgrades; raised
+                  prediction accuracy through model selection, a revised data pipeline, structured outputs, and prompt
+                  engineering.</li>
+                <li>Built a component that converts textbook diagrams into structured formats for visual, audio, and
+                  haptic accessibility.</li>
+                <li>Deployed pipelines for model evaluation and selection, prompt testing, and hyperparameter tuning.
+                </li>
+              </ul>
+            </details>
+            <details class="job" id="job-textlayer">
+              <summary><span class="j-when mono">Jun – Aug 2025</span><span class="j-role">AI Engineer</span><span
+                  class="pm" aria-hidden="true"></span><span class="j-org">Textlayer, Ottawa (remote)</span><span
+                  class="j-gist">Agentic tools and an evaluation framework for enterprise deployments.</span></summary>
+              <ul>
+                <li>Shipped agentic tools for enterprise deployments, including Notion natural-language search and
+                  text-to-SQL, and an evaluation framework for response, tool-call, and structured-output accuracy.</li>
+              </ul>
+            </details>
+            <details class="job" id="job-ingsikt">
+              <summary><span class="j-when mono">Feb – Jul 2025</span><span class="j-role">Co-founder &amp;
+                  CTO</span><span class="pm" aria-hidden="true"></span><span class="j-org">Ingsikt, Oslo
+                  (remote)</span><span class="j-gist">Real-time meeting feedback, built on live LLM inference.</span>
+              </summary>
+              <ul>
+                <li>Designed and prototyped a real-time meeting-feedback product built on live LLM inference, with a
+                  recommendation system that tracks key metrics for meeting leaders. Owned product vision, architecture,
+                  and delivery.</li>
+              </ul>
+            </details>
+            <details class="job" id="job-bps">
+              <summary><span class="j-when mono">Jan 2023 – Jan 2025</span><span class="j-role">Applied AI
+                  Engineer</span><span class="pm" aria-hidden="true"></span><span class="j-org">Baby Pigeon Studio,
+                  Vancouver (hybrid)</span><span class="j-gist">Generative AI products and client automation, from
+                  scoping to launch.</span></summary>
+              <ul>
+                <li>Scoped and shipped an LLM document-automation solution in production for the client Aplicar, cutting
+                  processing time by 95%.</li>
+                <li>Built and deployed a RAG chatbot over regulatory and internal documentation for a
+                  construction-industry client.</li>
+                <li>Led design, development, and launch of the generative AI products fixgrammar.ai, myEras, and
+                  NaiVIGATOR; scaled a charity app to 126K users in one week, growing donations 4×.</li>
+                <li>Created research applications exploring LLM, VLM, and CNN capabilities: Project Cloudberry, Slouch
+                  Detector, and AI Rainbolt.</li>
+              </ul>
+            </details>
+            <details class="job" id="job-apex">
+              <summary><span class="j-when mono">Jan 2020 – Sep 2022</span><span class="j-role">Project
+                  Manager</span><span class="pm" aria-hidden="true"></span><span class="j-org">Apex Specialized Rigging
+                  &amp; Moving, Vancouver (hybrid)</span><span class="j-gist">50+ industrial projects end to end, as the
+                  primary client contact.</span></summary>
+              <ul>
+                <li>Delivered 50+ industrial projects end to end as the primary client contact, from presales scoping
+                  through planning, execution, and closure.</li>
+                <li>Introduced Scrum, cutting planning time by 5–15%.</li>
+              </ul>
+            </details>
+            <details class="job" id="job-across">
+              <summary><span class="j-when mono">May 2010 – Sep 2019</span><span class="j-role">Lead Project
+                  Manager</span><span class="pm" aria-hidden="true"></span><span class="j-org">Across Project Logistics
+                  &amp; Keen-Mark Group, Saint Petersburg</span><span class="j-gist">600+ projects, budgets up to $2.3M,
+                  teams of 10 to 30.</span></summary>
+              <ul>
+                <li>Directed full-cycle delivery of 600+ projects with budgets up to $2.3M.</li>
+                <li>Managed engineering teams of 10 to 30 people, ten project teams, and 20+ stakeholders across six
+                  locations.</li>
+              </ul>
+            </details>
+          </div>
+        </section>
+
+        <!-- R&D -->
+        <section class="sec" id="research" data-plate="3" data-cap="experiments" data-folio="11"
+          data-name="research &amp; development">
+          <div class="strip" data-k="3" aria-hidden="true"><canvas></canvas><span class="strip-cap"><span
+                class="mono">plate iv</span>experiments</span></div>
+          <div class="sec-head">
+            <div>
+              <p class="kicker">R &amp; D</p>
+              <h2>research &amp; development</h2>
+            </div>
+            <span class="folio mono">p. 11</span>
+          </div>
+          <p class="lede" style="margin-bottom:34px">Side projects and research builds. I like exploring what models can
+            do and how people want to use them.</p>
+
+          <article class="feature">
+            <div class="feat-top">
+              <div>
+                <span class="mono">Featured open source, Aug 2026</span>
+                <h3 class="feat-title">claudish-to-english</h3>
+              </div>
+              <div class="feat-stats">
+                <div><span class="fig" data-gh="stars">2.7<i>K</i></span><span class="mono">GitHub stars</span></div>
+                <div><span class="fig" data-gh="forks">132</span><span class="mono">forks</span></div>
+              </div>
+            </div>
+            <p>A Claude Code plugin that shows a plain-English rewrite of each assistant message. The rewrite comes from
+              a local model through ollama by default, or from the codex CLI, the Anthropic API, or any
+              OpenAI-compatible API. It only changes what you read: Claude's reasoning and the saved transcript keep the
+              original, and every hook fails open, so a provider outage never hides an answer.</p>
+            <div class="xlate">
+              <figure><span class="mono">Claudish</span><q>Refactored the hydration boundary so the selector graph
+                  memoizes upstream; retries are idempotent now and short-circuit on stale cache keys.</q></figure>
+              <span class="ar" aria-hidden="true">→</span>
+              <figure><span class="mono">English</span><q>I changed how the page loads its data so it repeats less work.
+                  When a request fails and is retried, it no longer runs twice.</q></figure>
+            </div>
+            <div class="feat-links"><a href="https://github.com/gvzdv/claudish-to-english" target="_blank"
+                rel="noopener">github.com/gvzdv/claudish-to-english ↗</a></div>
+          </article>
+
+          <details class="lab-more">
+            <summary><span class="pm" aria-hidden="true"></span><span class="lm-t"><span class="lm-closed">See more
+                  research projects</span><span class="lm-open">Laboratory notebook</span></span><span
+                class="lm-n mono">5 projects, 2024–2025</span></summary>
+            <ul class="lab">
+              <li class="exp">
+                <div class="exp-top">
+                  <h4>wiktok</h4><span class="when mono">Jan 2025</span>
+                </div>
+                <p>A TikTok-style feed for Wikipedia. DeepSeek-V3 rewrites random articles in internet voices, from
+                  greentext biographies to tech-review inventions, and Google TTS narrates them over looping video.</p>
+                <span class="kit mono">FastAPI / React / DeepSeek-V3 / Google TTS</span><a
+                  href="https://github.com/gvzdv/wiktok" target="_blank" rel="noopener">github.com/gvzdv/wiktok ↗</a>
+              </li>
+              <li class="exp">
+                <div class="exp-top">
+                  <h4>naivigator</h4><span class="when mono">Oct 2024</span>
+                </div>
+                <p>An AI tour guide. Describe what you want to see, in any words, and it turns the request into places
+                  on a map.</p><span class="kit mono">LLM / Maps / JavaScript / Python</span><a
+                  href="https://github.com/gvzdv/naivigator" target="_blank" rel="noopener">github.com/gvzdv/naivigator
+                  ↗</a>
+              </li>
+              <li class="exp">
+                <div class="exp-top">
+                  <h4>fixgrammar</h4><span class="when mono">Oct 2024</span>
+                </div>
+                <p>A writing tool for the job people kept handing to ChatGPT: it corrects spelling, grammar, and
+                  punctuation, and nothing else.</p><span class="kit mono">LLM / JavaScript</span><a
+                  href="https://github.com/gvzdv/fixgrammar" target="_blank" rel="noopener">github.com/gvzdv/fixgrammar
+                  ↗</a>
+              </li>
+              <li class="exp">
+                <div class="exp-top">
+                  <h4>slouch detector</h4><span class="when mono">Jan 2024</span>
+                </div>
+                <p>Webcam pose tracking that watches your ear, shoulder, and knee, keeps score of your posture, and
+                  promises boba tea for a straight back.</p><span class="kit mono">Pose estimation / CNN /
+                  Python</span><a href="https://github.com/gvzdv/pose" target="_blank"
+                  rel="noopener">github.com/gvzdv/pose ↗</a>
+              </li>
+              <li class="exp">
+                <div class="exp-top">
+                  <h4>ai rainbolt</h4><span class="when mono">Jan 2024</span>
+                </div>
+                <p>A vision model plays GeoGuessr. Press space and it screenshots the round, makes its guess, and says
+                  it out loud through ElevenLabs.</p><span class="kit mono">Vision LLM / OpenAI / ElevenLabs</span><a
+                  href="https://github.com/gvzdv/ai-rainbolt" target="_blank"
+                  rel="noopener">github.com/gvzdv/ai-rainbolt ↗</a>
+              </li>
+            </ul>
+          </details>
+        </section>
+
+        <!-- PERSONNEL -->
+        <section class="sec" id="personnel" data-plate="4" data-cap="personnel file" data-folio="13"
+          data-name="personnel file">
+          <div class="strip" data-k="4" aria-hidden="true"><canvas></canvas><span class="strip-cap"><span
+                class="mono">plate v</span>personnel file</span></div>
+          <div class="sec-head">
+            <div>
+              <p class="kicker">Personnel</p>
+              <h2>personnel file</h2>
+            </div>
+            <span class="folio mono">p. 13</span>
+          </div>
+          <div class="files">
+            <div class="file">
+              <span class="mono">Education &amp; certification</span>
+              <dl>
+                <div>
+                  <dt>Claude Certified Architect</dt>
+                  <dd>Anthropic, 2026</dd>
+                </div>
+                <div>
+                  <dt>MSc, Engineering Management, with honours</dt>
+                  <dd>Saint Petersburg State University of Architecture and Civil Engineering, 2010</dd>
+                </div>
+                <div>
+                  <dt>Professional Scrum Master I</dt>
+                  <dd>Scrum.org, 2022</dd>
+                </div>
+                <div>
+                  <dt>Bullet Proof Manager leadership program</dt>
+                  <dd>Crestcom International, 2022</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="file">
+              <span class="mono">Languages</span>
+              <ul class="langs">
+                <li><b lang="en">english</b><span class="mono">Fluent</span></li>
+                <li><b lang="ru">русский</b><span class="mono">Native</span></li>
+                <li><b lang="no">norsk</b><span class="mono">Intermediate</span></li>
+                <li class="learning"><b lang="fr">français</b><span class="mono">Learning</span></li>
+              </ul>
+              <p class="note">Nitsche's General Dynamics posters were printed in six languages. Counting generously, I'm
+                at three.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CORRESPONDENCE -->
+        <section class="sec" id="correspondence" data-plate="4" data-cap="open channels" data-folio="14"
+          data-name="correspondence">
+          <div class="sec-head">
+            <div>
+              <p class="kicker">Correspondence</p>
+              <h2>correspondence</h2>
+            </div>
+            <span class="folio mono">p. 14</span>
+          </div>
+          <p class="lede">Write about a project, a role, or a problem you'd like a second pair of eyes on. I answer from
+            Montréal, on Eastern Time.</p>
+          <div class="mail">
+            <span class="mail-addr" id="mail">mv.gvozdev@gmail.com</span>
+            <button class="btn" type="button" id="copy-mail">Copy address</button>
+            <span class="btn-status mono" id="copy-status" aria-live="polite"></span>
+          </div>
+          <ul class="chan">
+            <li><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/mike-gvozdev" target="_blank"
+                rel="noopener">linkedin.com/in/mike-gvozdev</a></li>
+            <li><span class="mono">GitHub</span><a href="https://github.com/gvzdv" target="_blank"
+                rel="noopener">github.com/gvzdv</a></li>
+            <li><span class="mono">Hugging Face</span><a href="https://huggingface.co/gvozdev" target="_blank"
+                rel="noopener">huggingface.co/gvozdev</a></li>
+            <li><span class="mono">Location</span><span>Montréal, Québec, Canada</span></li>
+          </ul>
+        </section>
+
+        <footer class="colophon">
+          <p>Set in Saira, Libre Franklin, and IBM Plex Mono. The plates are drawn in code after Erik Nitsche's posters
+            and reports for General Dynamics, 1955–1960.</p>
+          <span class="mono">Printed in Montréal, 2026</span>
+        </footer>
+      </div>
+    </main>
+    <button class="corner" id="corner" type="button" aria-label="Turn the page"><span class="corner-lab mono">turn the
+        page</span><span class="corner-folio mono" aria-hidden="true">03</span></button>
+  </div>
 </body>
+
 </html>
