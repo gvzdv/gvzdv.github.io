@@ -772,6 +772,9 @@ function go(sec, dir) {
   corner.classList.remove('is-hint');
   if (!motionOK()) { jump(); return; }
   if (!document.startViewTransition) { if (sec === secs[0]) scrollTo({ top: 0, behavior: 'smooth' }); else sec.scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
+  // the leaf hinges on the spine and ends at the page's outer edge (on the desk, the page no longer fills the window)
+  root.style.setProperty('--spine', stageEl.getBoundingClientRect().right + 'px');
+  root.style.setProperty('--leaf-r', document.getElementById('pages').getBoundingClientRect().right + 'px');
   turning = true; root.dataset.turn = dir > 0 ? 'fwd' : 'back';
   const end = () => { turning = false; delete root.dataset.turn; };
   try { document.startViewTransition(jump).finished.then(end, end); } catch (e) { end(); jump(); }
